@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+//Write a function that takes a number as input and returns "Even" if the number is even, "Odd" if it's odd, and "Invalid input" if it's not a number.
+function checkEvenOdd(inputNum) {
+    if (typeof inputNum === 'number' && !isNaN(inputNum)) {
+        if (inputNum % 2 === 0) {
+            return "Even";
+        } else {
+            return "Odd";
+        }
+    } else {
+        return "Invalid input";
+    }
+}
+
+// Test the function
+console.log(checkEvenOdd(2));  // Output: Even
+console.log(checkEvenOdd(7));   // Output: Odd
+console.log(checkEvenOdd("Hello"));  // Output: Invalid input
+        
+    </script>
+</body>
+</html>
